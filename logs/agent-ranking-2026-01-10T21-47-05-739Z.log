@@ -1,0 +1,154 @@
+[2026-01-10T21:47:05.698Z] ================================================================================
+[2026-01-10T21:47:05.698Z] PROJECT MANAGER AGENT - MULTI-PROJECT RANKING
+[2026-01-10T21:47:05.698Z] ================================================================================
+[2026-01-10T21:47:05.707Z] ✓ Connected to MongoDB
+[2026-01-10T21:47:05.708Z] 
+📥 INPUT: 3 projects to rank
+[2026-01-10T21:47:05.709Z]    1. Learn Data Visualization with Python Complexity (medium, due: 2026-01-24)
+[2026-01-10T21:47:05.709Z]    2. Write a Long-Form Essay on AI & Education (medium, due: 2026-01-18)
+[2026-01-10T21:47:05.709Z]    3. Build a Traffic Flow Simulator (medium, due: 2026-01-14)
+[2026-01-10T21:47:05.709Z] 
+📊 Fetching existing sprint tasks...
+[2026-01-10T21:47:05.718Z] ✓ Found 2 active sprint tasks
+[2026-01-10T21:47:05.718Z] 
+🤖 PROJECT MANAGER AGENT - RANKING PROJECTS...
+[2026-01-10T21:47:05.718Z] --------------------------------------------------------------------------------
+[2026-01-10T21:47:05.718Z] 
+================================================================================
+[2026-01-10T21:47:05.718Z] 🏆 MULTI-PROJECT RANKING ANALYSIS
+[2026-01-10T21:47:05.718Z] ================================================================================
+[2026-01-10T21:47:05.718Z] Analyzing 3 projects...
+[2026-01-10T21:47:05.719Z] 🔍 Starting project analysis...
+[2026-01-10T21:47:05.719Z]    Fetching contextual signals from Long-Term Memory...
+[2026-01-10T21:47:05.719Z] 🔍 Starting project analysis...
+[2026-01-10T21:47:05.719Z]    Fetching contextual signals from Long-Term Memory...
+[2026-01-10T21:47:05.719Z] 🔍 Starting project analysis...
+[2026-01-10T21:47:05.719Z]    Fetching contextual signals from Long-Term Memory...
+[2026-01-10T21:47:05.723Z]    Retrieved 6 contextual signals
+[2026-01-10T21:47:05.724Z]    Retrieved 6 contextual signals
+[2026-01-10T21:47:05.724Z]    Retrieved 6 contextual signals
+[2026-01-10T21:47:05.728Z]    Detected 2 upcoming deadlines
+[2026-01-10T21:47:05.729Z]    Extracted 10 related concepts
+[2026-01-10T21:47:05.729Z]    Identified 4 recent high-engagement activities
+[2026-01-10T21:47:05.729Z] 
+📅 TIME ANALYSIS:
+[2026-01-10T21:47:05.729Z]    Current Date: 2026-01-10
+[2026-01-10T21:47:05.729Z]    Due Date: 2026-01-14
+[2026-01-10T21:47:05.729Z]    Days Until Due: 3
+[2026-01-10T21:47:05.729Z]    Weeks Available: 1
+[2026-01-10T21:47:05.729Z] 
+⚖️ CAPACITY ANALYSIS:
+[2026-01-10T21:47:05.729Z]    Weekly Capacity: 20h
+[2026-01-10T21:47:05.729Z]    Already Allocated: 16.0h
+[2026-01-10T21:47:05.729Z]    Available This Week: 4.0h
+[2026-01-10T21:47:05.729Z]    Project Requires: 8h
+[2026-01-10T21:47:05.729Z]    Fits in Week: NO ✗
+[2026-01-10T21:47:05.729Z] 
+🎯 CALCULATING PRIORITY SCORES...
+[2026-01-10T21:47:05.729Z]    Extracted 10 project concepts: build, traffic, flow, simulator, define
+[2026-01-10T21:47:05.730Z]    💚 Interest Score: 100/100 (based on time spent on related topics)
+[2026-01-10T21:47:05.730Z]    🔥 Difficulty Score: 71/100 (based on struggle indicators)
+[2026-01-10T21:47:05.730Z]    ⏰ Urgency Score: 90/100 (3 days until due)
+[2026-01-10T21:47:05.730Z]    🧠 Context Relevance: 15/100 (alignment with recent work)
+[2026-01-10T21:47:05.730Z]    ⭐ FINAL PRIORITY SCORE: 75/100
+[2026-01-10T21:47:05.730Z]    📊 Weights: Interest(30%) + Difficulty(35%) + Urgency(20%) + Context(15%)
+[2026-01-10T21:47:05.730Z] 
+🤔 MAKING DECISION...
+[2026-01-10T21:47:05.730Z]    📅 DECISION: EXECUTE_NOW (Priority Score: 75)
+[2026-01-10T21:47:05.730Z]    Note: Limited capacity this week, but project is prioritized for inclusion
+[2026-01-10T21:47:05.731Z]    Detected 2 upcoming deadlines
+[2026-01-10T21:47:05.731Z]    Extracted 10 related concepts
+[2026-01-10T21:47:05.731Z]    Identified 4 recent high-engagement activities
+[2026-01-10T21:47:05.731Z] 
+📅 TIME ANALYSIS:
+[2026-01-10T21:47:05.731Z]    Current Date: 2026-01-10
+[2026-01-10T21:47:05.731Z]    Due Date: 2026-01-24
+[2026-01-10T21:47:05.731Z]    Days Until Due: 13
+[2026-01-10T21:47:05.731Z]    Weeks Available: 2
+[2026-01-10T21:47:05.731Z] 
+⚖️ CAPACITY ANALYSIS:
+[2026-01-10T21:47:05.731Z]    Weekly Capacity: 20h
+[2026-01-10T21:47:05.731Z]    Already Allocated: 16.0h
+[2026-01-10T21:47:05.731Z]    Available This Week: 4.0h
+[2026-01-10T21:47:05.731Z]    Project Requires: 8h
+[2026-01-10T21:47:05.731Z]    Fits in Week: NO ✗
+[2026-01-10T21:47:05.731Z] 
+🎯 CALCULATING PRIORITY SCORES...
+[2026-01-10T21:47:05.731Z]    Extracted 10 project concepts: learn, data, visualization, python, complexity
+[2026-01-10T21:47:05.731Z]    💚 Interest Score: 99/100 (based on time spent on related topics)
+[2026-01-10T21:47:05.731Z]    🔥 Difficulty Score: 43/100 (based on struggle indicators)
+[2026-01-10T21:47:05.731Z]    ⏰ Urgency Score: 50/100 (13 days until due)
+[2026-01-10T21:47:05.731Z]    🧠 Context Relevance: 20/100 (alignment with recent work)
+[2026-01-10T21:47:05.731Z]    ⭐ FINAL PRIORITY SCORE: 58/100
+[2026-01-10T21:47:05.731Z]    📊 Weights: Interest(30%) + Difficulty(35%) + Urgency(20%) + Context(15%)
+[2026-01-10T21:47:05.731Z] 
+🤔 MAKING DECISION...
+[2026-01-10T21:47:05.731Z]    📋 DECISION: BREAK_DOWN (Priority Score: 58)
+[2026-01-10T21:47:05.731Z]    Reason: Project too large for single sprint
+[2026-01-10T21:47:05.731Z]    Breaking into weekly tasks...
+[2026-01-10T21:47:05.732Z]    Created 2 sprint tasks
+[2026-01-10T21:47:05.732Z]    Detected 2 upcoming deadlines
+[2026-01-10T21:47:05.732Z]    Extracted 10 related concepts
+[2026-01-10T21:47:05.732Z]    Identified 4 recent high-engagement activities
+[2026-01-10T21:47:05.732Z] 
+📅 TIME ANALYSIS:
+[2026-01-10T21:47:05.732Z]    Current Date: 2026-01-10
+[2026-01-10T21:47:05.732Z]    Due Date: 2026-01-18
+[2026-01-10T21:47:05.732Z]    Days Until Due: 7
+[2026-01-10T21:47:05.732Z]    Weeks Available: 1
+[2026-01-10T21:47:05.732Z] 
+⚖️ CAPACITY ANALYSIS:
+[2026-01-10T21:47:05.732Z]    Weekly Capacity: 20h
+[2026-01-10T21:47:05.732Z]    Already Allocated: 16.0h
+[2026-01-10T21:47:05.732Z]    Available This Week: 4.0h
+[2026-01-10T21:47:05.732Z]    Project Requires: 8h
+[2026-01-10T21:47:05.732Z]    Fits in Week: NO ✗
+[2026-01-10T21:47:05.732Z] 
+🎯 CALCULATING PRIORITY SCORES...
+[2026-01-10T21:47:05.732Z]    Extracted 10 project concepts: write, long-form, essay, education, sprint
+[2026-01-10T21:47:05.732Z]    💚 Interest Score: 0/100 (based on time spent on related topics)
+[2026-01-10T21:47:05.732Z]    🔥 Difficulty Score: 0/100 (based on struggle indicators)
+[2026-01-10T21:47:05.732Z]    ⏰ Urgency Score: 70/100 (7 days until due)
+[2026-01-10T21:47:05.732Z]    🧠 Context Relevance: 0/100 (alignment with recent work)
+[2026-01-10T21:47:05.732Z]    ⭐ FINAL PRIORITY SCORE: 14/100
+[2026-01-10T21:47:05.732Z]    📊 Weights: Interest(30%) + Difficulty(35%) + Urgency(20%) + Context(15%)
+[2026-01-10T21:47:05.732Z] 
+🤔 MAKING DECISION...
+[2026-01-10T21:47:05.732Z]    📅 DECISION: EXECUTE_NOW (Priority Score: 14)
+[2026-01-10T21:47:05.732Z]    Note: Limited capacity this week, but project is prioritized for inclusion
+[2026-01-10T21:47:05.732Z] 
+================================================================================
+[2026-01-10T21:47:05.732Z] 🥇 TOP 3 PROJECTS TO FOCUS ON:
+[2026-01-10T21:47:05.732Z] ================================================================================
+[2026-01-10T21:47:05.732Z] 
+🥇 RANK 1: Build a Traffic Flow Simulator
+[2026-01-10T21:47:05.732Z]    Priority Score: 75/100
+[2026-01-10T21:47:05.732Z]    Interest: 100 | Difficulty: 71
+[2026-01-10T21:47:05.732Z]    Urgency: 90 | Context: 15
+[2026-01-10T21:47:05.732Z]    Reasoning: 📅 Priority Score: 75/100. Limited capacity (4.0h available), but project should be in your top 3 focus areas.
+[2026-01-10T21:47:05.732Z] 
+🥈 RANK 2: Learn Data Visualization with Python Complexity
+[2026-01-10T21:47:05.732Z]    Priority Score: 58/100
+[2026-01-10T21:47:05.732Z]    Interest: 99 | Difficulty: 43
+[2026-01-10T21:47:05.732Z]    Urgency: 50 | Context: 20
+[2026-01-10T21:47:05.732Z]    Reasoning: 📋 Project scored 58/100 priority. Breaking 8h into 2 sprint tasks. This aligns with your current focus on: TypeScript, React.
+[2026-01-10T21:47:05.732Z] 
+🥉 RANK 3: Write a Long-Form Essay on AI & Education
+[2026-01-10T21:47:05.732Z]    Priority Score: 14/100
+[2026-01-10T21:47:05.732Z]    Interest: 0 | Difficulty: 0
+[2026-01-10T21:47:05.732Z]    Urgency: 70 | Context: 0
+[2026-01-10T21:47:05.732Z]    Reasoning: 📅 Priority Score: 14/100. Limited capacity (4.0h available), but project should be in your top 3 focus areas.
+[2026-01-10T21:47:05.732Z] 
+================================================================================
+[2026-01-10T21:47:05.732Z] 
+📊 RANKING COMPLETE
+[2026-01-10T21:47:05.732Z] ✓ Top 3 projects identified
+[2026-01-10T21:47:05.732Z] 
+💾 Saving projects to MongoDB...
+[2026-01-10T21:47:05.737Z] ✓ Saved: Build a Traffic Flow Simulator (Rank 1, Score 75)
+[2026-01-10T21:47:05.738Z] ✓ Saved: Learn Data Visualization with Python Complexity (Rank 2, Score 58)
+[2026-01-10T21:47:05.739Z] ✓ Saved: Write a Long-Form Essay on AI & Education (Rank 3, Score 14)
+[2026-01-10T21:47:05.739Z] 
+================================================================================
+[2026-01-10T21:47:05.739Z] ✅ RANKING SESSION COMPLETE
+[2026-01-10T21:47:05.739Z] ================================================================================
