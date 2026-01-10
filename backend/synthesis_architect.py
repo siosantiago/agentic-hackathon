@@ -12,10 +12,10 @@ from google import genai
 from google.genai import types
 
 # Load environment variables
-load_dotenv()
+load_dotenv('.env.local')
 
 # Configuration
-MONGO_URI = os.getenv("MONGO_URI")
+MONGO_URI = os.getenv("MONGODB_URI")  # Changed from MONGO_URI to MONGODB_URI
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 DB_NAME = "AcademicPlanner"
 COLLECTION_KG = "Knowledge_Graph"
