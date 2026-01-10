@@ -62,3 +62,145 @@ An AI-powered project management system that breaks down ambitious ideas into ac
 - **Backend**: Next.js API Routes
 - **Database**: MongoDB with Mongoose
 - **AI**: OpenAI GPT-4 or Anthropic Claude
+
+# Agentic Multi-Agent Project Ranking System
+
+Multi-agent system using LangGraph and DeepSeek for intelligent project prioritization.
+
+## Setup
+
+### 1. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 2. Set Environment Variables
+
+Create a `.env` file:
+
+```bash
+cp .env.example .env
+```
+
+Edit `.env` and add your keys:
+
+```
+DEEPSEEK_API_KEY=your_key_here
+MONGODB_URI=mongodb://localhost:27017/agentic-system
+```
+
+Or export them directly:
+
+```bash
+export DEEPSEEK_API_KEY="your_key_here"
+export MONGODB_URI="mongodb://localhost:27017/agentic-system"
+```
+
+## Running the Workflow
+
+### Option 1: Direct Python Execution
+
+```bash
+python run_workflow.py
+```
+
+This will output logs directly to the console.
+
+### Option 2: With Log File (Recommended)
+
+```bash
+chmod +x run_with_logging.sh
+./run_with_logging.sh
+```
+
+This will:
+- Save logs to `logs/agent-ranking-YYYY-MM-DDTHH-MM-SS.log`
+- Display output in console simultaneously
+
+### Option 3: View Logs Only (No Console Output)
+
+```bash
+python run_workflow.py > logs/output.log 2>&1
+```
+
+## Viewing Logs
+
+```bash
+# View most recent log
+cat logs/agent-ranking-*.log | tail -n 100
+
+# Follow log in real-time
+tail -f logs/agent-ranking-*.log
+
+# Search for specific events
+grep "DEEPSEEK" logs/agent-ranking-*.log
+grep "LANGGRAPH" logs/agent-ranking-*.log
+```
+
+## What the Logs Show
+
+The workflow logs will display:
+
+1. **LangGraph Orchestration**
+   - Workflow initialization
+   - Node execution flow
+   - State transitions
+
+2. **DeepSeek Invocations**
+   - Strategic analysis by Project Manager
+   - Synthesis reasoning by Ranking Agent
+   - Timing and token usage
+
+3. **Agent Communication**
+   - Inter-agent message passing
+   - State updates
+   - Decision reasoning
+
+4. **Project Analysis**
+   - Priority score calculations
+   - Context relevance
+   - Final rankings
+
+## Example Log Output
+
+```
+[2026-01-10T21:47:05.698Z] ================================================================================
+[2026-01-10T21:47:05.698Z] 🔀 LANGGRAPH WORKFLOW INITIALIZATION
+[2026-01-10T21:47:05.698Z] ================================================================================
+[2026-01-10T21:47:05.698Z] 🔀 Building state graph...
+[2026-01-10T21:47:05.698Z] 🔀 Adding nodes:
+[2026-01-10T21:47:05.698Z] 🔀    • coordinator (Project Manager Agent)
+[2026-01-10T21:47:05.698Z] 🔀    • analyzer (Project Analyzer Agent)
+...
+[2026-01-10T21:47:05.698Z] 🧠 DEEPSEEK STRATEGIC ANALYSIS - INVOKED BY PROJECT MANAGER
+[2026-01-10T21:47:05.698Z] 🧠 Model: deepseek-reasoner
+[2026-01-10T21:47:05.698Z] 🧠 Purpose: Strategic portfolio analysis
+...
+```
+
+## Troubleshooting
+
+### No logs appearing?
+```bash
+# Check if Python is finding the modules
+python -c "from src.agents.langgraph_workflow import create_ranking_workflow; print('OK')"
+```
+
+### DeepSeek API errors?
+```bash
+# Verify your API key
+echo $DEEPSEEK_API_KEY
+
+# Test connection
+curl -H "Authorization: Bearer $DEEPSEEK_API_KEY" https://api.deepseek.com/v1/models
+```
+
+### MongoDB connection issues?
+```bash
+# Check MongoDB is running
+mongosh --eval "db.version()"
+
+# Or start MongoDB
+mongod --dbpath ./data/db
+```

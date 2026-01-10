@@ -33,9 +33,9 @@ export class SynthesisArchitectAgent {
     const useAnthropic = !!process.env.ANTHROPIC_API_KEY;
     
     if (useFireworks) {
-      console.log('🔥 Using Fireworks.ai (DeepSeek v3.2) for project generation');
+      console.log('🔥 Using Fireworks.ai (DeepSeek V3) for project generation');
       this.llm = new ChatOpenAI({
-        modelName: 'accounts/fireworks/models/deepseek-v3p2',
+        modelName: 'accounts/fireworks/models/deepseek-v3', // ✅ Changed to v3
         temperature: 0.7,
         openAIApiKey: process.env.FIREWORKS_API_KEY,
         configuration: {
