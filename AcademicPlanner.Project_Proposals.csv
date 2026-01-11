@@ -1,0 +1,4 @@
+_id,instructor,title,short introduction,difficulty,first_step,tags[0],tags[1],tags[2],timestamp,generated_by
+6962ed8aca5fdebf792cf5a5,Administrator,Historical Analysis using NLP,Uses Computer Science (NLP) to analyze sentiment in historical texts.,Medium,Scrape text from the provided History syllabus.,CS,History,AI,2026-01-10T16:23:38.416Z,Mock_Architect_Fallback
+6962ed8aca5fdebf792cf5a6,Administrator,Historical Analysis using NLP,Uses Computer Science (NLP) to analyze sentiment in historical texts.,Medium,Scrape text from the provided History syllabus.,CS,History,AI,2026-01-10T16:23:38.636Z,Mock_Architect_Fallback
+6962ed8aca5fdebf792cf5a7,Administrator,Optimizing Supply Chains with Calculus,Combines Concept_0A in Computer Science principles with optimization techniques from Calculus to solve business problems.,Hard,Define a cost function for a theoretical logistics network.,Economics,Math,Business,2026-01-10T16:23:38.828Z,Mock_Architect_Fallback
