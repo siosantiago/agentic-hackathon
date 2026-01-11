@@ -1,0 +1,40 @@
+{
+  "timestamp": "2026-01-10T16:05:12.978636",
+  "model": "accounts/fireworks/models/deepseek-v3p2",
+  "total_projects_analyzed": 3,
+  "top_3_projects": [
+    {
+      "rank": 1,
+      "name": "Learn Data Visualization with Python",
+      "priority_score": 70.0,
+      "complexity": "medium",
+      "due_date": "2026-01-24",
+      "estimated_hours": 8,
+      "decision": "EXECUTE_NOW",
+      "rationale": "",
+      "first_step": ""
+    },
+    {
+      "rank": 2,
+      "name": "Write Essay on AI & Education",
+      "priority_score": 70.0,
+      "complexity": "medium",
+      "due_date": "2026-01-18",
+      "estimated_hours": 8,
+      "decision": "EXECUTE_NOW",
+      "rationale": "",
+      "first_step": ""
+    },
+    {
+      "rank": 3,
+      "name": "Build Traffic Flow Simulator",
+      "priority_score": 70.0,
+      "complexity": "medium",
+      "due_date": "2026-01-14",
+      "estimated_hours": 8,
+      "decision": "EXECUTE_NOW",
+      "rationale": "",
+      "first_step": ""
+    }
+  ]
+}

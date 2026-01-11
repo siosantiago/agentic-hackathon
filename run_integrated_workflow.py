@@ -6,6 +6,7 @@ Integrated Multi-Agent Workflow:
 """
 import os
 import sys
+import json
 from datetime import datetime
 from dotenv import load_dotenv
 from pymongo import MongoClient
@@ -65,6 +66,43 @@ def fetch_proposals_from_synthesis_architect(db_client) -> List[Dict[str, Any]]:
     except Exception as e:
         logger.log(f"Error fetching proposals: {e}", "ERROR")
         return []
+
+def export_results_to_json(final_state: Dict[str, Any]):
+    """Export top 3 ranked projects to JSON file"""
+    try:
+        output_file = "top_3_projects.json"
+        
+        # Prepare data for export
+        export_data = {
+            "timestamp": datetime.now().isoformat(),
+            "model": final_state.get('metadata', {}).get('deepseek_model', 'N/A'),
+            "total_projects_analyzed": len(final_state.get('projects', [])),
+            "top_3_projects": []
+        }
+        
+        # Add top 3 ranked projects
+        for result in final_state.get('ranked_results', [])[:3]:
+            project_data = {
+                "rank": result.get('rank'),
+                "name": result.get('project', {}).get('name'),
+                "priority_score": result.get('priority_score'),
+                "complexity": result.get('project', {}).get('complexity'),
+                "due_date": result.get('project', {}).get('due_date'),
+                "estimated_hours": result.get('project', {}).get('estimated_hours'),
+                "decision": result.get('decision'),
+                "rationale": result.get('project', {}).get('rationale', ''),
+                "first_step": result.get('project', {}).get('first_step', '')
+            }
+            export_data['top_3_projects'].append(project_data)
+        
+        # Write to JSON file
+        with open(output_file, 'w', encoding='utf-8') as f:
+            json.dump(export_data, f, indent=2, ensure_ascii=False)
+        
+        logger.log(f"\n✓ Exported top 3 projects to {output_file}", "SUCCESS")
+        
+    except Exception as e:
+        logger.log(f"Error exporting to JSON: {e}", "ERROR")
 
 def check_environment():
     """Check if environment is properly configured"""
@@ -188,6 +226,9 @@ def main():
             logger.log(f"\n📊 Metadata:", "INFO")
             logger.log(f"  Model: {final_state['metadata'].get('deepseek_model', 'N/A')}", "INFO")
             logger.log(f"  Invoked at: {final_state['metadata'].get('deepseek_invoked_at', 'N/A')}", "INFO")
+        
+        # Export top 3 projects to JSON
+        export_results_to_json(final_state)
         
         db_client.close()
         return final_state
