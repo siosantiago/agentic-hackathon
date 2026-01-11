@@ -1,0 +1,101 @@
+[2026-01-10T21:29:52.211Z] ================================================================================
+[2026-01-10T21:29:52.211Z] PROJECT MANAGER AGENT - ANALYSIS SESSION START
+[2026-01-10T21:29:52.211Z] ================================================================================
+[2026-01-10T21:29:52.211Z] ✓ Connected to MongoDB
+[2026-01-10T21:29:52.211Z] 
+📥 INPUT PROJECT:
+[2026-01-10T21:29:52.211Z]    Title: Build a Traffic Flow Simulator
+[2026-01-10T21:29:52.211Z]    Description: Define Simulation Scope (1h)
+
+Decide intersections vs highways
+
+Identify inputs (cars/min, lights, lanes)
+
+System Architecture Design (1.5h)
+
+Data structures for vehicles
+
+Time-step logic
+
+Visualization approach
+
+Core Simulation Engine (2.5h)
+
+Vehicle movement logic
+
+Collision avoidance rules
+
+Traffic light state machine
+
+Visualization Layer (1.5h)
+
+Render vehicles
+
+Animate time steps
+
+Validation & Testing (1h)
+
+Edge cases (high congestion)
+
+Performance check
+[2026-01-10T21:29:52.211Z]    Due Date: 2026-01-18
+[2026-01-10T21:29:52.211Z]    Complexity: medium
+[2026-01-10T21:29:52.211Z]    Estimated Hours: 4
+[2026-01-10T21:29:52.211Z]    Tags: none
+[2026-01-10T21:29:52.211Z] 
+💾 Creating project in MongoDB...
+[2026-01-10T21:29:52.214Z] ✓ Project created with ID: 6962c4d01b288db9f5c461a6
+[2026-01-10T21:29:52.214Z] 
+📊 Fetching existing sprint tasks...
+[2026-01-10T21:29:52.215Z] ✓ Found 2 active sprint tasks
+[2026-01-10T21:29:52.215Z] 
+🤖 PROJECT MANAGER AGENT - ANALYZING...
+[2026-01-10T21:29:52.215Z] --------------------------------------------------------------------------------
+[2026-01-10T21:29:52.215Z] 🔍 Starting project analysis...
+[2026-01-10T21:29:52.215Z]    Fetching contextual signals from Long-Term Memory...
+[2026-01-10T21:29:52.216Z]    Retrieved 6 contextual signals
+[2026-01-10T21:29:52.221Z]    Detected 2 upcoming deadlines
+[2026-01-10T21:29:52.221Z]    Extracted 10 related concepts
+[2026-01-10T21:29:52.221Z]    Identified 4 recent high-engagement activities
+[2026-01-10T21:29:52.221Z] 
+📅 TIME ANALYSIS:
+[2026-01-10T21:29:52.221Z]    Current Date: 2026-01-10
+[2026-01-10T21:29:52.221Z]    Due Date: 2026-01-18
+[2026-01-10T21:29:52.221Z]    Days Until Due: 7
+[2026-01-10T21:29:52.221Z]    Weeks Available: 1
+[2026-01-10T21:29:52.221Z] 
+⚖️ CAPACITY ANALYSIS:
+[2026-01-10T21:29:52.221Z]    Weekly Capacity: 20h
+[2026-01-10T21:29:52.221Z]    Already Allocated: 16.0h
+[2026-01-10T21:29:52.221Z]    Available This Week: 4.0h
+[2026-01-10T21:29:52.221Z]    Project Requires: 4h
+[2026-01-10T21:29:52.221Z]    Fits in Week: YES ✓
+[2026-01-10T21:29:52.221Z] 
+🤔 MAKING DECISION...
+[2026-01-10T21:29:52.221Z]    ⚠️ CONFLICT DETECTED: "Linear Algebra Assignment - Canvas" due in 4 days
+[2026-01-10T21:29:52.221Z]    ❌ DECISION: DEFER (deadline conflict)
+[2026-01-10T21:29:52.221Z] 
+📊 AGENT ANALYSIS COMPLETE:
+[2026-01-10T21:29:52.221Z]    Decision: DEFER
+[2026-01-10T21:29:52.221Z]    Feasibility: NO
+[2026-01-10T21:29:52.221Z]    Time Available: 4.0h
+[2026-01-10T21:29:52.221Z]    Time Required: 4h
+[2026-01-10T21:29:52.221Z]    Days Until Due: 7
+[2026-01-10T21:29:52.221Z] 
+💭 REASONING:
+[2026-01-10T21:29:52.221Z]    ⚠️ Conflicting deadline detected from your LMS: "Linear Algebra Assignment - Canvas" due in 4 days. Address that first.
+[2026-01-10T21:29:52.221Z] 
+🧠 CONTEXTUAL INSIGHTS:
+[2026-01-10T21:29:52.221Z]    Related Concepts: TypeScript, React, Hooks, Frontend Development, Eigenvectors, Matrix decomposition, Eigenvalues, Graph Theory, Data Structures, Algorithms
+[2026-01-10T21:29:52.221Z]    Recent Activity: 4 items
+[2026-01-10T21:29:52.221Z]    Upcoming Deadlines: 2 items
+[2026-01-10T21:29:52.221Z] 
+📱 Generating Student Board payload...
+[2026-01-10T21:29:52.221Z] ✓ Student Board generated
+[2026-01-10T21:29:52.221Z] 
+💼 EXECUTING DECISION: DEFER
+[2026-01-10T21:29:52.223Z] ✓ Project status updated to: deferred
+[2026-01-10T21:29:52.223Z] 
+================================================================================
+[2026-01-10T21:29:52.223Z] ✅ ANALYSIS SESSION COMPLETE
+[2026-01-10T21:29:52.223Z] ================================================================================
