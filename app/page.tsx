@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import StudentBoard from '@/components/StudentBoard';
 import ProjectSubmissionForm from '@/components/ProjectSubmissionForm';
 import { StudentBoardPayload } from '@/lib/project-manager-agent';
@@ -42,13 +43,25 @@ export default function Home() {
             Transform ambitious ideas into actionable sprint tasks. The agent analyzes complexity, 
             checks due dates, and protects your time.
           </p>
-          <div className="mt-6">
-            <a
+          <div className="mt-6 flex gap-4 justify-center">
+            <Link
+              href="/ai-ranked-projects"
+              className="inline-block px-8 py-3 bg-gradient-to-r from-green-600 to-emerald-600 text-white font-semibold rounded-lg shadow-md hover:from-green-700 hover:to-emerald-700 transition-all"
+            >
+              🤖 AI Ranked Projects (DeepSeek)
+            </Link>
+            <Link
               href="/rank"
               className="inline-block px-8 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold rounded-lg shadow-md hover:from-indigo-700 hover:to-purple-700 transition-all"
             >
-              🏆 Rank Multiple Projects
-            </a>
+              Rank Multiple Projects
+            </Link>
+            <Link
+              href="/top-projects"
+              className="inline-block px-8 py-3 bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-semibold rounded-lg shadow-md hover:from-blue-700 hover:to-cyan-700 transition-all"
+            >
+              View Top 3 Projects
+            </Link>
           </div>
         </header>
 
