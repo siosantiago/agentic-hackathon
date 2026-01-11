@@ -204,3 +204,52 @@ mongosh --eval "db.version()"
 # Or start MongoDB
 mongod --dbpath ./data/db
 ```
+
+## 🎓 Frappe LMS Integration
+
+**NEW!** Display your AI agent's top 3 ranked projects as courses in Frappe LMS!
+
+### Quick Start
+
+```bash
+cd demo
+./start_with_agents.sh
+```
+
+This will:
+1. Start Frappe LMS Docker container
+2. Run the AI agent workflow
+3. Sync top 3 projects to LMS as courses
+4. Start real-time auto-sync monitor
+
+### Access Points
+
+- **Frappe LMS:** http://localhost:8000/lms
+- **Next.js UI:** http://localhost:3000
+- **Login:** Administrator / admin
+
+### What You Get
+
+Each of your top 3 projects becomes a complete course with:
+- Course title with project name
+- Priority scores and complexity
+- Due dates and time estimates
+- AI-generated rationale and first steps
+- Auto-generated course structure with lessons
+
+### Real-time Updates
+
+```bash
+# Terminal 1: Auto-sync monitor
+cd demo
+python auto_sync_lms.py
+
+# Terminal 2: Re-run workflow anytime
+python run_integrated_workflow.py
+```
+
+Courses update automatically within 5 seconds!
+
+See [demo/README.md](demo/README.md) and [demo/ARCHITECTURE.md](demo/ARCHITECTURE.md) for complete details.
+
+---

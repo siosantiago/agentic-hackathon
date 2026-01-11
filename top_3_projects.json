@@ -1,40 +1,40 @@
 {
-  "timestamp": "2026-01-10T16:05:12.978636",
+  "timestamp": "2026-01-10T19:27:09.708280",
   "model": "accounts/fireworks/models/deepseek-v3p2",
-  "total_projects_analyzed": 3,
+  "total_projects_analyzed": 5,
   "top_3_projects": [
     {
       "rank": 1,
-      "name": "Learn Data Visualization with Python",
+      "name": "Advanced Art History & History Framework",
       "priority_score": 70.0,
       "complexity": "medium",
       "due_date": "2026-01-24",
       "estimated_hours": 8,
       "decision": "EXECUTE_NOW",
-      "rationale": "",
-      "first_step": ""
+      "rationale": "A project exploring the intersection of Art History and History, focusing on framework methodologies.",
+      "first_step": "Review literature on Art History framework."
     },
     {
       "rank": 2,
-      "name": "Write Essay on AI & Education",
+      "name": "Introductory Computer Science & Statistics Framework",
       "priority_score": 70.0,
-      "complexity": "medium",
-      "due_date": "2026-01-18",
+      "complexity": "hard",
+      "due_date": "2026-01-24",
       "estimated_hours": 8,
       "decision": "EXECUTE_NOW",
-      "rationale": "",
-      "first_step": ""
+      "rationale": "A project exploring the intersection of Computer Science and Statistics, focusing on framework methodologies.",
+      "first_step": "Review literature on Computer Science framework."
     },
     {
       "rank": 3,
-      "name": "Build Traffic Flow Simulator",
+      "name": "Theoretical Philosophy & Chemistry Visualization",
       "priority_score": 70.0,
-      "complexity": "medium",
-      "due_date": "2026-01-14",
+      "complexity": "hard",
+      "due_date": "2026-01-24",
       "estimated_hours": 8,
       "decision": "EXECUTE_NOW",
-      "rationale": "",
-      "first_step": ""
+      "rationale": "A project exploring the intersection of Philosophy and Chemistry, focusing on visualization methodologies.",
+      "first_step": "Review literature on Philosophy visualization."
     }
   ]
 }
