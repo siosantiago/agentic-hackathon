@@ -1,40 +1,7 @@
 #!/bin/bash
 
-cd /home/frappe
+# This is a minimal init.sh for backwards compatibility
+# The real setup happens in Dockerfile.fast
 
-if [ -d "/home/frappe/frappe-bench/apps/frappe" ]; then
-    echo "Bench already exists, starting..."
-    cd frappe-bench
-    bench start
-else
-    echo "Creating new bench..."
-
-    bench init --skip-redis-config-generation frappe-bench
-
-    cd frappe-bench
-
-    # Use containers instead of localhost
-    bench set-mariadb-host mariadb
-    bench set-redis-cache-host redis://redis:6379
-    bench set-redis-queue-host redis://redis:6379
-    bench set-redis-socketio-host redis://redis:6379
-
-    # Remove redis, watch from Procfile
-    sed -i '/redis/d' ./Procfile
-    sed -i '/watch/d' ./Procfile
-
-    bench get-app lms
-
-    bench new-site lms.localhost \
-    --force \
-    --mariadb-root-password 123 \
-    --admin-password admin \
-    --no-mariadb-socket
-
-    bench --site lms.localhost install-app lms
-    bench --site lms.localhost set-config developer_mode 1
-    bench --site lms.localhost clear-cache
-    bench use lms.localhost
-
-    bench start
-fi
+echo "Starting Frappe LMS..."
+/home/frappe/init-site.sh

@@ -1,38 +1,54 @@
 # Frappe LMS Docker Setup
 
-Quick development setup for Frappe LMS using Docker.
+Fast setup with pre-built image for <3 minute startup.
 
-## Usage
+## Quick Start
 
-1. Start the containers:
 ```bash
+# Build image once (takes ~10 minutes)
+docker compose build
+
+# Start in ~30 seconds!
 docker compose up -d
+
+# Access at http://localhost:8000/lms
 ```
 
-2. Wait for the initial setup to complete (~10 minutes on first run):
-   - Initializes bench
-   - Clones and installs LMS app
-   - Creates and configures the site
+## Startup Times
 
-3. Access the site:
-   - http://localhost:8000/lms
-   - http://lms.localhost:8000/lms
+| Action | Time |
+|--------|------|
+| Build image (one-time) | ~10 minutes |
+| First run (after build) | ~30 seconds |
+| Subsequent runs | ~30 seconds |
 
 ## Login
 
 - Username: `Administrator`
 - Password: `admin`
 
-## Restarting
+## Rebuilding
 
-After the first run, the site will start immediately:
+To update LMS or force rebuild:
+
 ```bash
-docker compose restart frappe
+docker compose build --no-cache
+docker compose up -d
 ```
 
-## Logs
+## Standard Setup (Slower, No Build)
 
-View initialization progress:
+If you prefer the standard 5-minute setup without building:
+
 ```bash
-docker compose logs -f frappe
+# Use the original simple setup
+mv docker-compose.yml docker-compose.fast.yml
+# Download official setup
+wget -O docker-compose.yml https://raw.githubusercontent.com/frappe/lms/develop/docker/docker-compose.yml
+wget -O init.sh https://raw.githubusercontent.com/frappe/lms/develop/docker/init.sh
+docker compose up -d  # Takes ~5 minutes
 ```
+
+## Performance Tips
+
+See [PERFORMANCE.md](PERFORMANCE.md) for detailed optimization strategies.

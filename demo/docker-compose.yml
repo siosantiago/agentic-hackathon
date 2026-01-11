@@ -1,5 +1,5 @@
-version: "3.7"
 name: lms
+
 services:
   mariadb:
     image: mariadb:10.8
@@ -17,8 +17,11 @@ services:
     image: redis:alpine
 
   frappe:
-    image: frappe/bench:latest
-    command: bash /workspace/init.sh
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        BUILD_DATE: ${BUILD_DATE:-1}
     environment:
       - SHELL=/bin/bash
     working_dir: /home/frappe
